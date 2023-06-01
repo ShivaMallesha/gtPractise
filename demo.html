@@ -1,0 +1,304 @@
+You're running out of storage (97%). … 
+Soon you won't be able to upload new files to Drive and send or receive emails in Gmail.Learn more
+
+<html>
+<body>
+<script>
+	function main()
+	{
+		var onlFst=myDiv.children;
+		if(slctId0.value=="Animals")
+		{
+			
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>0;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var anmlNm=["Wild animals","Domestic animals"];
+			var anml=document.createElement("SELECT");
+			anml.id="anmlId";
+			anml.onchange=function(){anmls(this.value);};
+			myDiv.appendChild(anml);
+			var optn=document.createElement("OPTION");
+			anml.appendChild(optn);
+			for(var i=0;i<anmlNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML=anmlNm[i];
+				anml.appendChild(optn);
+			}
+		}
+		else if(slctId0.value=="Birds")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>0;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var brdNm=["Flightless Birds","Sea Birds","Others"];
+			var brd=document.createElement("SELECT");
+			brd.id="brdId";
+			brd.onchange=function(){brds(this.value);};
+			myDiv.appendChild(brd);
+			var optn=document.createElement("OPTION");
+			brd.appendChild(optn);
+			for(var i=0;i<brdNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML=brdNm[i];
+				brd.appendChild(optn);
+			}
+		}
+		else if(slctId0.value=="Flowers")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>0;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var flwrNm=["Wild flowers","Local flowers"];
+			var flwr=document.createElement("SELECT");
+			flwr.id="anmlId";
+			flwr.onchange=function(){flwrs(this.value);};
+			myDiv.appendChild(flwr);
+			var optn=document.createElement("OPTION");
+			flwr.appendChild(optn);
+			for(var i=0;i<flwrNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML=flwrNm[i];
+				flwr.appendChild(optn);
+			}
+		
+		}
+		else if(slctId0.value=="Fruits")
+		{	
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>0;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var frtNm=["Sweet fruits","Sour fruits",];
+			var frt=document.createElement("SELECT");
+			frt.id="anmlId";
+			frt.onchange=function(){frts(this.value);};
+			myDiv.appendChild(frt);
+			var optn=document.createElement("OPTION");
+			frt.appendChild(optn);
+			for(var i=0;i<frtNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML=frtNm[i];
+				frt.appendChild(optn);
+			}
+		}
+	}
+	function anmls(x)
+	{
+		var onlFst=myDiv.children;
+		if(x=="Wild animals")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>1;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var wldAnmls=document.createElement("SELECT");
+			var wldAnmlsNm=["","Hyenas","Bears","Leopards","Orangutans","Wolfs","Rhinoceroses","Zebras","Giraffes"];
+			myDiv.appendChild(wldAnmls);
+			for(var i=0;i<wldAnmlsNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML=wldAnmlsNm[i];
+				wldAnmls.appendChild(optn);
+			}
+		}
+		else if(x=="Domestic animals")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>1;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var dmstcAnmls=document.createElement("SELECT");
+			var dmstcAnmlsNm=["","Cattle","Dogs","Cats","Sheeps","Goats","Chickens","Buffaloes","Pigs"];
+			myDiv.appendChild(dmstcAnmls);
+			for(var i=0;i<dmstcAnmlsNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML= dmstcAnmlsNm[i];
+				dmstcAnmls.appendChild(optn);
+			}
+		}
+	}
+	function brds(x)
+	{
+		var onlFst=myDiv.children;
+		if(x=="Flightless Birds")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>1;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var flgtlsBrds=document.createElement("SELECT");
+			var flgtlsBrdsNm=["","Penguin","Ostrich","Emu","Kiwi","Dodo"];
+			myDiv.appendChild(flgtlsBrds);
+			for(var i=0;i<flgtlsBrdsNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML=flgtlsBrdsNm[i];
+				flgtlsBrds.appendChild(optn);
+			}
+		}
+		else if(x=="Sea Birds")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>1;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var seaBrds=document.createElement("SELECT");
+			var seaBrdsNm=["","Albatross","Cormorant","Deadlock","Pelican","Great skua"];
+			myDiv.appendChild(seaBrds);
+			for(var i=0;i<seaBrdsNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML= seaBrdsNm[i];
+				seaBrds.appendChild(optn);
+			}
+		}
+		else if(x=="Others")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>1;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var othrBrds=document.createElement("SELECT");
+			var othrBrdsNm=["","Sparrows","Bulbuls","Hummingbirds","Dove","Pigeons","Peacocks","Mynahs","Green bee-eaters"];
+			myDiv.appendChild(othrBrds);
+			for(var i=0;i<othrBrdsNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML= othrBrdsNm[i];
+				othrBrds.appendChild(optn);
+			}
+		}
+	}
+	function flwrs(x)
+	{
+		var onlFst=myDiv.children;
+		if(x=="Wild flowers")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>1;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var wldFlwrs=document.createElement("SELECT");
+			var wldFlwrsNm=["","Cardosanto","Cat's claw","Crab's eye","Goat weed","Mesquite","Starbur"];
+			myDiv.appendChild(wldFlwrs);
+			for(var i=0;i<wldFlwrsNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML=wldFlwrsNm[i];
+				wldFlwrs.appendChild(optn);
+			}
+		}
+		else if(x=="Local flowers")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>1;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var lclFlwrs=document.createElement("SELECT");
+			var lclFlwrsNm=["","Lotus","Dairy","Sun flower","Rose","Hibiscus","Crossandra"];
+			myDiv.appendChild(lclFlwrs);
+			for(var i=0;i<lclFlwrsNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML=lclFlwrsNm[i];
+				lclFlwrs.appendChild(optn);
+			}
+		}
+	}
+	function frts(x)
+	{
+		var onlFst=myDiv.children;
+		if(x=="Sweet fruits")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>1;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var swtFrts=document.createElement("SELECT");
+			var swtFrtsNm=["","Mango","Water mellon","Apple","Goa","Banana","Orange","Straw berry","papaya"];
+			myDiv.appendChild(swtFrts);
+			for(var i=0;i<swtFrtsNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML=swtFrtsNm[i];
+				swtFrts.appendChild(optn);
+			}
+		}
+		else if(x=="Sour fruits")
+		{
+			if(onlFst.length>1)
+			{
+				for(var i=onlFst.length-1;i>1;i--)
+				{
+					myDiv.removeChild(onlFst[i]);
+				}
+			}
+			var srFrts=document.createElement("SELECT");
+			var srFrtsNm=["","Mango","Mosambi","Tamarind","Gooseberries"];
+			myDiv.appendChild(srFrts);
+			for(var i=0;i<srFrtsNm.length;i++)
+			{
+				var optn=document.createElement("OPTION");
+				optn.innerHTML= srFrtsNm[i];
+				srFrts.appendChild(optn);
+			}
+		}
+	}
+</script>
+<div id=myDiv>
+<select id="slctId0" onchange=main()>
+<option></option>
+<option>Animals</option>
+<option>Birds</option>
+<option>Flowers</option>
+<option>Fruits</option>
+</select>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<html>
+<head>
+<body>
+<script language="javascript">
+function checkNum()
+{
+	alert("ok");
+	var num=2;//parseInt(numId.value);
+	switch(num)
+	{
+		case 1:h1Id.innerHTML=h1Id.innerHTML+" "+"this is case 1";
+		case 2:h1Id.innerHTML=h1Id.innerHTML+" "+"this is case 2";
+		case 3:h1Id.innerHTML=h1Id.innerHTML+" "+"this is case 3";
+			break;
+		case 4:h1Id.innerHTML=h1Id.innerHTML+" "+"this is case 4";
+		default:h1Id.innerHTML=h1Id.innerHTML+" "+"this is default";
+			break;
+	}			
+}
+</script>
+<input type="number" id="numId" >
+<input type="button" id="btnId" value="display number" onclick="checkNum()">
+<h1 id="h1Id">result</h1>
+</body>
+</head>
+</html>
+
+h1Id.innerHTML=h1Id.innerHTML+" "+"this is case 2"
